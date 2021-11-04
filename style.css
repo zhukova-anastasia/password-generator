@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+}
+
+.pw-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .2);
+}
+
+.pw {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: rgb(243, 243, 243);
+    padding: .5rem .75rem;
+    border-radius: 5px;
+    height: 49px;
+}
+
+.copy {
+    background-color: #3eadcf;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: relative;
+    top: -49px;
+    left: 302px;
+    transform: translateY(5px);
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.generate {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .5rem .75rem;
+    border: none;
+    outline: none;
+    background-color:#3eadcf;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control label {
+    margin-bottom: .3rem;
+    font-size: .9rem;
+}
+
+#len {
+    height: 25px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}

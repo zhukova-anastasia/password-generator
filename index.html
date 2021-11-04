@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
+    <title>Password generator</title>
+</head>
+
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw" id="pw"></div>
+            <button id="copy" class="copy"><i class='bx bx-copy-alt'></i></button>
+        </div>
+
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input type="number" min="4" max="25" id="len">
+            </div>
+            <div class="form-control">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input type="checkbox" name="" id="upper">
+            </div>
+            <div class="form-control">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input type="checkbox" name="" id="lower">
+            </div>
+            <div class="form-control">
+                <label for="number">Contain Numbers</label>
+                <input type="checkbox" name="" id="number">
+            </div>
+            <div class="form-control">
+                <label for="symbol">Contain Symbols</label>
+                <input type="checkbox" name="" id="symbol">
+            </div>
+        </div>
+        <button id="generate" class="generate">Generate Password</button>
+</body>
+
+</html>
